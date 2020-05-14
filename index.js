@@ -8,7 +8,7 @@ function findMatching(drivers, filter) {
 
 function fuzzyMatch(drivers, testFilter) {
     return drivers.filter(driver => {
-        return driver.match(`/^${testFilter}/`)
+        return driver.match(`^${testFilter}`)
     })
 }
 
